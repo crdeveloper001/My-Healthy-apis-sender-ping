@@ -61,7 +61,7 @@ async function pingServices() {
 }
 
 // ⏱️ Ejecutar cada 5 minutos
-cron.schedule("*/5 * * * *", pingServices);
+cron.schedule("*/1 * * * *", pingServices);
 
 // Ejecutar al iniciar
 pingServices();
